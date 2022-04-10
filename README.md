@@ -82,6 +82,8 @@ WordPress current information(WP 5.9.3) see
 [How-to Guides / Blocks](https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/). In this instance
 each block does not need any package bundler files as this is handled in the `gutenberg` root directory.
 
+
+#### Required
 Each block requires a directory of its own, named after its block, i.e. `first-block`. Within this directory the following
 files can be used;<br />
 └── `/blocks`<br />
@@ -96,6 +98,11 @@ block gets inserted.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;├── `/save.js` - The save function defines the way in which the different attributes should be
 combined into the final markup, which is then serialized by the block editor into `post_content`.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;└── `/style.scss` - Applied both on the front of your site and in the editor.<br />
+
+
+#### Register the new block
+That's it, the block will be auto registered based on the above files, and the block will be auto
+bundled next time the script is run from teh root directory of this plugin.
 
 
 ### <a id="customisation-multiplevs-vs-combined-block-asset-files">Multiple vs Combined Block Asset Files</a>
