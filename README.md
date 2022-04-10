@@ -1,6 +1,7 @@
 # Theme Gutenberg Blocks
 
-This is a boilerplate for adding multiple blocks within a theme. This is relevant for If yuu wish to....
+This is a boilerplate for adding multiple blocks within a theme. If you wish to add blocks to a plugin rather
+than via the theme please use [Plugin Gutenberg Blocks](https://github.com/anthonythorne/plugin-gutenberg-blocks).
 
 ## Table of Contents
 
@@ -54,7 +55,7 @@ if ( file_exists( $theme_gutenberg_blocks_bootstrap_file ) ) {
 
 ```bash
 cd wp-content/themes/xxx/source/gutenberg
-npm install --force
+npm install
 npm run build
 ```
 
